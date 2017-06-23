@@ -1,5 +1,7 @@
-function hello(argument) {
-	console.log("Hello "+argument);
+function hello(param) {
+	console.log("Hello "+param[0]);
 }
 
-hello("Bansal");
+var argv = process.argv.splice(2);
+
+hello(argv);
